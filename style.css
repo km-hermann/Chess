@@ -1,0 +1,128 @@
+body {
+  background: #f0f2f5;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 15px;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  color: #292929;
+  font-size: 2rem;
+}
+
+.scores {
+  position: relative;
+  background: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  max-width: 1000px;
+  padding: 0 10px;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 800px) {
+  .scores {
+    margin-bottom: 30px;
+  }
+}
+
+#player1Score {
+  color: #ff6347;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+#player2Score {
+  color: #296cc5;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.score1 {
+  background: #ff6347;
+  color: #ffffff;
+  padding: 2px 5px;
+  border-radius: 12px;
+  margin-right: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 8px double #fff;
+}
+
+.score2 {
+  background: #296cc5;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 12px;
+  margin-left: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 8px double #fff;
+}
+
+.mainTable {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, 100px);
+  grid-template-rows: repeat(6, 100px);
+  gap: 0;
+  padding: 8px;
+  margin: 5px;
+  background: #aaaaaa;
+  border-radius: 12px;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid transparent;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.black {
+    background: #2f2f2f;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.white {
+    background: #ffffff;
+}
+
+.black:hover {
+  transform: scale(1.05);
+  border: 4px solid gold;
+}
+
+.piece {
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(254, 178, 0, 0.2);
+}
+
+.p1 {
+    background: tomato;
+    border: 12px double #f1f1f1;
+}
+
+.p2 {
+    background: #296cc5;
+    border: 12px double #f1f1f1;
+}
